@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>shijianhai</title>
+<title>CSS3 :target 选择器使用 | shijianhai</title>
 <meta name="description" content="时间成海">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -22,6 +22,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="http://www.shijianhai.cn">shijianhai</a></h3>
@@ -75,67 +76,65 @@
   </div>
 </nav>
 
-
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
+          <article class="article">
+            <h1>CSS3 :target 选择器使用</h1>
+            <p class="article-meta">
+              2019-04-30
+              
+            </p>
+            
+            <div class="post-content">
+              <ul>
+<li>
+<p>简介
+URL 带有后面跟有锚名称 #，指向文档内某个具体的元素。这个被链接的元素就是目标元素(target element)。
+:target 选择器可用于选取当前活动的目标元素。<a href="%60http://www.w3school.com.cn/cssref/selector_target.asp%60">参考链接</a></p>
+</li>
+<li>
+<p>Example:</p>
+</li>
+</ul>
+<pre><code>&lt;style&gt;
+ div:target{
+ background-color:red;  
+}
+&lt;/style&gt;
+&lt;a href=&quot;#test&quot;&gt;高亮div&lt;/a&gt;
+&lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Use:</li>
+</ul>
+<blockquote>
+<ul>
+<li>快速提示选中</li>
+<li>....</li>
+</ul>
+</blockquote>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
           
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://www.shijianhai.cn/post/css3-target-xuan-ze-qi-shi-yong">CSS3 :target 选择器使用</a>
-    </h2>
-    <p class="article-meta">
-      2019-04-30
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="http://www.shijianhai.cn/post/css3-target-xuan-ze-qi-shi-yong" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://www.shijianhai.cn/post/hello-gridea">Hello Gridea</a>
-    </h2>
-    <p class="article-meta">
-      2018-12-12
-      
-        <a href="http://www.shijianhai.cn/tag/gridea" class="badge warning">
-          Gridea
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-    </p>
-    <div class="row">
-      <a href="http://www.shijianhai.cn/post/hello-gridea" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="http://www.shijianhai.cn/post/hello-gridea">
+                <h3 class="post-title">
+                  Hello Gridea
+                </h3>
+              </a>
+            </div>
+          
         </div>
         
-        <div class="row flex-edges">
-  
-  
-</div>
-
       </div>
-      
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="http://www.shijianhai.cn/images/avatar.png?v=1556621166150" class="no-responsive avatar">
@@ -169,6 +168,12 @@
         
           
             <li>
+              <a href="http://www.shijianhai.cn/post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
               <a href="http://www.shijianhai.cn/post/hello-gridea">Hello Gridea</a>
             </li>
           
@@ -182,7 +187,7 @@
     </div>
     <div class="row">
       
-        <a href="http://www.shijianhai.cn/tag/gridea" class="badge warning">
+        <a href="http://www.shijianhai.cn/tag/gridea" class="badge secondary">
           Gridea
         </a>
       
@@ -193,7 +198,9 @@
   </div>
 </div>
 
+
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
