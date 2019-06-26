@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | shijianhai</title>
+<title>Android存储记录 | shijianhai</title>
 <meta name="description" content="时间成海">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -22,6 +22,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="http://www.shijianhai.cn">shijianhai</a></h3>
@@ -75,89 +76,58 @@
   </div>
 </nav>
 
-    
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          
+          <article class="article">
+            <h1>Android存储记录</h1>
+            <p class="article-meta">
+              2019-06-26
+              
+            </p>
+            
+            <div class="post-content">
+              <pre><code>1）内部存储，无需权限 (data/data/packageName)
+</code></pre>
+<ul>
+<li>
+<p>Files
+1. Context.getFilesDir(),该方法返回data/data/packageName下的File对象
+2. Context.fileList(),返回files下所有的文件名，返回的是String[]对象
+3. ...</p>
+</li>
+<li>
+<p>Cache
+1.Context.getCacheDir()，该方法返回/data/data/packageName/cache下的File对象</p>
+</li>
+<li>
+<p>data/data/packageName下自定义文件夹
+1.getDir(String name, int mode)，返回/data/data/packageName/下的指定名称的文件夹File对象，如果该文件夹         不存在则用指定名称创建一个新的文件夹。</p>
+</li>
+</ul>
+<pre><code>2）外部存储，需权限 (sdcard/Android/packageName)
+</code></pre>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h3 class="year" data-aos-delay="500">2019</h3>
-              
-                
-                  <article class="post">
-                    <a href="http://www.shijianhai.cn/post/android-cun-chu-ji-lu">
-                      <h4 class="post-title">
-                        Android存储记录
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://www.shijianhai.cn/post/androidstudio-pei-zhi-dai-li-hou-qing-chu-wu-xiao-jie-jue">
-                      <h4 class="post-title">
-                        AndroidStudio 配置代理后清除无效解决
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://www.shijianhai.cn/post/dart-zhong-bao-de-dao-ru-yu-chai-fen-ji-lu">
-                      <h4 class="post-title">
-                        Dart中包的导入与拆分记录
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://www.shijianhai.cn/post/xue-xi-css3-de-yi-xie-ji-lu">
-                      <h4 class="post-title">
-                        学习CSS3 的一些记录
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-              
-            
-              <h3 class="year" data-aos-delay="500">2018</h3>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="http://www.shijianhai.cn/post/hello-gridea">
-                      <h4 class="post-title">
-                        Hello Gridea
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="http://www.shijianhai.cn/post/androidstudio-pei-zhi-dai-li-hou-qing-chu-wu-xiao-jie-jue">
+                <h3 class="post-title">
+                  AndroidStudio 配置代理后清除无效解决
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="http://www.shijianhai.cn/images/avatar.png?v=1561521953831" class="no-responsive avatar">
@@ -209,6 +179,12 @@
         
           
             <li>
+              <a href="http://www.shijianhai.cn/post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
               <a href="http://www.shijianhai.cn/post/hello-gridea">Hello Gridea</a>
             </li>
           
@@ -226,19 +202,19 @@
           AndroidStudio
         </a>
       
-        <a href="http://www.shijianhai.cn/tag/PSKtCDCaR" class="badge success">
+        <a href="http://www.shijianhai.cn/tag/PSKtCDCaR" class="badge ">
           Flutter
         </a>
       
-        <a href="http://www.shijianhai.cn/tag/NYvAXNS-0" class="badge ">
+        <a href="http://www.shijianhai.cn/tag/NYvAXNS-0" class="badge secondary">
           Dart
         </a>
       
-        <a href="http://www.shijianhai.cn/tag/V3AeCXPXr" class="badge secondary">
+        <a href="http://www.shijianhai.cn/tag/V3AeCXPXr" class="badge warning">
           CSS
         </a>
       
-        <a href="http://www.shijianhai.cn/tag/gridea" class="badge secondary">
+        <a href="http://www.shijianhai.cn/tag/gridea" class="badge ">
           Gridea
         </a>
       
@@ -249,6 +225,8 @@
   </div>
 </div>
 
+
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
